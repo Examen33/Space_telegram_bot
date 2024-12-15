@@ -6,7 +6,7 @@ Sends photos of space to the channel telegram from 3 sources.
 
 1. Скачайте репозиторий с проектом:
     ```sh
-    git clone 
+    git clone https://github.com/Examen33/Space_telegram_bot.git
     ```
 
 2. Создайте файл `.env` в корневой директории проекта и добавьте следующие строки:
