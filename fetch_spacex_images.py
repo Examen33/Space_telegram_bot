@@ -11,6 +11,7 @@ def fetch_spacex_last_launch():
     parser.add_argument("-l", "--launch_id", help="Start ID", default="5eb87d42ffd86e000604b384")
     namespace = parser.parse_args()
 
+    spacex_dir = "directory/spacex/"
     spacex_url = f"https://api.spacexdata.com/v5/launches/{namespace.launch_id}"
     response = requests.get(spacex_url)
     response.raise_for_status()
@@ -25,5 +26,4 @@ def main():
 
 
 if __name__ == '__main__':
-    spacex_dir = "directory/spacex/"
     main()

@@ -9,6 +9,7 @@ from download_with_ext import define_ext
 
 def get_nasa_days_pictures(nasa_token, number_of_photos):
     nasa_url = "https://api.nasa.gov/planetary/apod/"
+    nasa_pic_dir = "directory/daily_nasa/"
     payload = {
         "api_key": nasa_token,
         "count" : number_of_photos,
@@ -31,5 +32,4 @@ def main():
 
 
 if __name__ == "__main__":
-    nasa_pic_dir = "directory/daily_nasa/"
     main()
