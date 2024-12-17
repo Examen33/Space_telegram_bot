@@ -23,10 +23,6 @@ async def send_image(bot, chat_id, image_path):
 
 
 async def post_images_to_telegram(directory, delay):
-    load_dotenv()
-    token = os.getenv("TELEGRAM_BOT_TOKEN")
-    chat_id = os.getenv("TELEGRAM_CHANNEL_ID")
-
     if not token:
         raise ValueError("TELEGRAM_BOT_TOKEN environment variable не установлен")
 
@@ -47,6 +43,9 @@ async def post_images_to_telegram(directory, delay):
 
 
 if __name__ == "__main__":
+    load_dotenv()
+    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    chat_id = os.getenv("TELEGRAM_CHANNEL_ID")
     parser = argparse.ArgumentParser(
         description="Публиковать фотографии в Telegram-канал с заданной периодичностью"
     )

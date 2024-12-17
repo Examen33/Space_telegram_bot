@@ -40,7 +40,7 @@ Sends photos of space to the channel telegram from 3 sources.
     
 2. Запустите скрипт для публикации изображений в Telegram-канал:
     ```sh
-    python image_post_to_telegram.py images --delay 14400
+    python image_for_telegram.py images --delay 14400
     ```
 
 ### Цель проекта
